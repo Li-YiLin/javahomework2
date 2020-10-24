@@ -74,5 +74,11 @@ Teacher跨包定义类的具体实现
 * java数组创建不能在声明中指定数组元素的个数，需要创建数组，为数组分配内存。
 *
 ## 实验相关链接
-* https://blog.csdn.net/qq_35038153/article/details/79577464?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160355362019724839255273%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160355362019724839255273&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-79577464.first_rank_ecpm_v3_pc_rank_v2&utm_term=java+nextint+nextline&spm=1018.2118.3001.4187
-* https://blog.csdn.net/xingzhiqing/article/details/93177671?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160355397219724839209481%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160355397219724839209481&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-93177671.first_rank_ecpm_v3_pc_rank_v2&utm_term=java%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD&spm=1018.2118.3001.4187
+* nextInt和nextLine的理解 
+https://blog.csdn.net/qq_35038153/article/details/79577464?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160355362019724839255273%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160355362019724839255273&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-79577464.first_rank_ecpm_v3_pc_rank_v2&utm_term=java+nextint+nextline&spm=1018.2118.3001.4187
+* 字符串判断 
+https://blog.csdn.net/xingzhiqing/article/details/93177671?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160355397219724839209481%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160355397219724839209481&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-93177671.first_rank_ecpm_v3_pc_rank_v2&utm_term=java%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD&spm=1018.2118.3001.4187
+* 控制台输入方法
+https://blog.csdn.net/idomyway/article/details/82748000?biz_id=102&utm_term=%E6%8E%A5%E5%8F%97%E8%BE%93%E5%85%A5%E7%9A%84%E6%95%B0%E5%AD%97java&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-82748000&spm=1018.2118.3001.4187
+* 强制类型转换
+https://blog.csdn.net/qq_34851243/article/details/91665870?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160346697319724838536089%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160346697319724838536089&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-91665870.first_rank_ecpm_v3_pc_rank_v2&utm_term=java%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2&spm=1018.2118.3001.4187
