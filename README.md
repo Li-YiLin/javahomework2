@@ -13,39 +13,100 @@
 ##### 流程图
 ![思维导图](思维导图.png)
 ## 核心代码
-主类中的具体内容
+people下的核心代码伪代码展示
 ```
-        
+    //属性
+    int bianhao;
+    String name;
+    String sex;
+    //构造方法
+    people (int bianhao,String name,String sex){}   
 ```
-主类同包下的类的定义
+Student类定义
 ```
- Cpu cpu;
-    HardDisk HD;
-    private String name;
-   ···
-    void show(){
-        System.out.println("硬盘的容量是"+HD.getAmount());
-        System.out.println("cpu的运行速度是"+cpu.getSpeed());
-        }
+//属性
+ int bianhao;
+	String name;
+	Course course[] = new Course[20];
+	int xuanke[]= new int[20];
+  //方法
+  void xuanke(int x){
+		xuanke[x] = 1;
+	}//利用编号数组来确定学生是否选课
+	void tuike(int x){}
+  public String toString() {}//打印所有信息
+  void getcourse(Course cour)//打印课程信息的实现	
+  //showall完整代码
+  void showall(){
+		for(int i=0;i<=19;i++){
+			if(xuanke[i] == 1 && course[i] != null){
+				System.out.println("已选："+course[i]);
+			}
+		}
+	}
 ```
-Teacher跨包定义类的具体实现
+Course类定义
 ```
-    //Teacher类定义
-    static PC pc;   //使用静态的PC类
-    private String sex;       
-    
-    public Teacher(PC pc,String sex){
-        this.pc=pc;
-        this.sex=sex;
-    }
-    String getSex(String sex){
-        return sex;
-    }
-    void setPc(PC pc){
-        this.pc=pc;
-    }
-    public static void showname(){   //public类型静态方法
-        System.out.println("主机名："+pc.getName());
+   //属性
+   String bianhao;
+       String name;
+       String dress;
+       String time;
+       Teacher teacher;
+   //方法
+   Course(String bianhao,String name,String dress,String time,Teacher teacher){}
+   public String toString() {}
+   void show(){}
+```
+主类定义
+```
+//定义老师与课程
+Teacher you= new Teacher("游煦",201002,"男");
+	Course math = new Course("01","高数","教学楼101","周一第一节",you);
+	Course english = new Course("02","视听说","图书馆503","周二第三节",you);
+    Scanner sc = new Scanner(System.in);
+  //导入老师与课程
+	Student li = new Student(2019311,"LYL");
+	System.out.println("老师基本信息"+you);
+	li.getcourse(math);
+	li.getcourse(english);
+  //进入系统
+  while(i != 0){
+	    System.out.println("请选择：\n1：选课    2：退课   3：显示已选   0：退出");
+
+		i = sc.nextInt();
+		sc.nextLine();     //抛弃剩下内容便于下次调用nextLine
+		if(i == 1){
+			cls();//清屏方法
+			System.out.println("目前课程：01 高数;02 视听说 \n 	请选择：");
+			String i1 = sc.nextLine();
+			if(i1.equals("01")){
+                 li.xuanke(1);
+                 System.out.println("选课成功");
+			}
+			else if(i1.equals("02")){
+				li.xuanke(2);
+				System.out.println("选课成功");
+			}
+         else System.out.println("暂无此选课，返回上级");
+		}
+		else if(i == 2){
+			cls();
+			System.out.println("目前课程：01 高数;02 视听说 \n 	请选择：");
+			String i1 = sc.nextLine();
+			if(i1.equals("01")){
+				li.tuike(1);
+			}
+			else if(i1.equals("02")){
+				li.tuike(2);
+			}
+			else System.out.println("暂无此选课,无法退课，返回上级");
+		}
+
+        else if(i == 3){
+			li.showall();
+		}
+        System.out.println("课程信息已更新");
     }
 ```
 ## 实验结果
