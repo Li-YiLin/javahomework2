@@ -15,22 +15,7 @@
 ## 核心代码
 主类中的具体内容
 ```
-        //对象创建
-        PC pc = new PC();
-        Cpu cpu = new Cpu();
-        HardDisk HD = new HardDisk(4000, (float) 2.5,true);
-        //方法使用
-        cpu.setSpeed(2200);
-        HD.setAmount(200);
-        pc.setCPU(cpu);
-        pc.setHardDIsk(HD);
-        pc.show();
-        System.out.println("cpu品牌："+cpu.getbrand("AMD"));
-        System.out.println("硬盘类型:");
-        HD.gettype();
-        Teacher ZSB = new Teacher(pc,"男");
-        pc.setName("vegetable");
-        Teacher.showname();
+        
 ```
 主类同包下的类的定义
 ```
@@ -73,10 +58,13 @@ Teacher跨包定义类的具体实现
 ![实验结果截图](实验结果3.png)
 ## 实验感想
 ---
-
+实验最初只完成了最基本的一些功能，不能称之为系统。在看了同学们的分享之后，完善了系统的逻辑，对整个系统搭建一个大致的结构。虽说整个系统还有很多逻辑不完善的地方，但是目前的程序大体上可以称之为系统。
+在修改程序的过程中，遇到的bug不多，主要是在使用数组时，需要对数组进行实例化内存分配。在完善程序的过程中，接触了nextInt等java获取控制版内容的方法，接触了java流的知识。修改实验的过程中，对字符串判断无效，经过筛查，发现了字符串判断分引用型判断和数值型判断。
+搜索了网上的相关实验，我觉得我们掌握的东西不够多，课堂上讲解的内容也不够多，需要我们在实验中，在空余时间进一步学习。
+随着程序的体量增大，我越发觉得语言是一门实践性的课程，如果只掌握一些理论知识，离编写出程序还是有很大差距的。接下来的实验中，应该更多讲知识运用，尽量尝试新的东西。
 知识点：
 * java数组创建不能在声明中指定数组元素的个数，需要创建数组，为数组分配内存。
-*
+* java多参数传值实质是数组
 ## 实验相关链接
 * nextInt和nextLine的理解 
 https://blog.csdn.net/qq_35038153/article/details/79577464?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160355362019724839255273%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=160355362019724839255273&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-79577464.first_rank_ecpm_v3_pc_rank_v2&utm_term=java+nextint+nextline&spm=1018.2118.3001.4187
